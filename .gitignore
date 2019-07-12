@@ -1,0 +1,161 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+*~
+*.sw[mnpcod]
+*.log
+*.lock
+*.tmp
+*.pyc
+*.tmp.*
+log.txt
+*.sublime-project
+*.sublime-workspace
+npm-debug.log*
+
+pagosEnLineaApp/.idea/
+pagosEnLineaApp/.vscode/
+pagosEnLineaApp/.ionic/
+pagosEnLineaApp/.sourcemaps/
+pagosEnLineaApp/.sass-cache/
+pagosEnLineaApp/.versions/
+pagosEnLineaApp/coverage/
+pagosEnLineaApp/collection/
+pagosEnLineaApp/dist/
+pagosEnLineaApp/node_modules/
+pagosEnLineaApp/tmp/
+pagosEnLineaApp/.tmp/
+pagosEnLineaApp/temp/
+pagosEnLineaApp/core/theme-builder/
+pagosEnLineaApp/core/test-components/
+pagosEnLineaApp/core/css/
+pagosEnLineaApp/angular/css/
+pagosEnLineaApp/platforms/
+pagosEnLineaApp/plugins/
+pagosEnLineaApp/plugins/android.json
+pagosEnLineaApp/plugins/ios.json
+pagosEnLineaApp/$RECYCLE.BIN/
+
+pagosEnLineaApp/.DS_Store
+pagosEnLineaApp/Thumbs.db
+pagosEnLineaApp/UserInterfaceState.xcuserstate
+pagosEnLineaApp/.env
+
+pagosEnLineaApp/.package.tmp.json
+
+pagosEnLineaApp/src/themes/version.scss
+pagosEnLineaApp/scripts/e2e/webpackEntryPoints.json
+pagosEnLineaApp/scripts/build/e2e-generated-tsconfig.json
+pagosEnLineaApp/*.css.ts
+
+pagosEnLineaApp/stats.json
+
+# demo stuff
+pagosEnLineaApp/demos/node_modules
+pagosEnLineaApp/demos/polyfills
+pagosEnLineaApp/demos/css
+pagosEnLineaApp/demos/fonts
+pagosEnLineaApp/demos/src/**/*.js
+pagosEnLineaApp/demos/src/**/*.map
+pagosEnLineaApp/demos/src/**/*.ngfactory.ts
+pagosEnLineaApp/demos/src/**/*.d.ts
+pagosEnLineaApp/demos/src/**/*.metadata.json
+pagosEnLineaApp/demos/src/**/*.css.shim.ts
+
+
+
+# stencil
+pagosEnLineaApp/angular/css/
+pagosEnLineaApp/core/css/
+pagosEnLineaApp/core/loader/
+pagosEnLineaApp/.stencil/
+
+
+
+### OSX ###
+pagosEnLineaApi/.DS_Store
+pagosEnLineaApi/.AppleDouble
+pagosEnLineaApi/.LSOverride
+
+# Icon must end with two \r
+pagosEnLineaApi/Icon
+
+
+# Thumbnails
+pagosEnLineaApi/._*
+
+# Files that might appear on external disk
+pagosEnLineaApi/.Spotlight-V100
+pagosEnLineaApi/.Trashes
+
+# Directories potentially created on remote AFP share
+pagosEnLineaApi/.AppleDB
+pagosEnLineaApi/.AppleDesktop
+pagosEnLineaApi/Network Trash Folder
+pagosEnLineaApi/Temporary Items
+pagosEnLineaApi/.apdisk
+
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+pagosEnLineaApi/__pycache__/
+pagosEnLineaApi/*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+pagosEnLineaApi/.Python
+pagosEnLineaApi/env/
+pagosEnLineaApi/build/
+pagosEnLineaApi/develop-eggs/
+pagosEnLineaApi/dist/
+pagosEnLineaApi/downloads/
+pagosEnLineaApi/eggs/
+pagosEnLineaApi/lib/
+pagosEnLineaApi/lib64/
+pagosEnLineaApi/parts/
+pagosEnLineaApi/sdist/
+pagosEnLineaApi/var/
+pagosEnLineaApi/*.egg-info/
+pagosEnLineaApi/.installed.cfg
+pagosEnLineaApi/*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pagosEnLineaApi/pip-log.txt
+pagosEnLineaApi/pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+pagosEnLineaApi/htmlcov/
+pagosEnLineaApi/.tox/
+pagosEnLineaApi/.coverage
+pagosEnLineaApi/.cache
+pagosEnLineaApi/nosetests.xml
+pagosEnLineaApi/coverage.xml
+
+# Translations
+pagosEnLineaApi/*.mo
+pagosEnLineaApi/*.pot
+
+# Sphinx documentation
+pagosEnLineaApi/docs/_build/
+
+# PyBuilder
+pagosEnLineaApi/target/
+
+
+### Django ###
+pagosEnLineaApi/*.log
+pagosEnLineaApi/*.pot
+pagosEnLineaApi/*.pyc
+pagosEnLineaApi/__pycache__/
+pagosEnLineaApi/local_settings.py
+migrations/
+.env
+pagosEnLineaApi/db.sqlite3

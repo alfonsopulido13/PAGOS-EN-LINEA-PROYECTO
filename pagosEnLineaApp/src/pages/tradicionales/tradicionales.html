@@ -1,0 +1,70 @@
+<!--
+  Generated template for the TradicionalesPage page.
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+      <ion-title>
+          Pizzas Tradicionales
+        
+      </ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content paddingc class="cards-bg">
+
+  <ion-list >
+  
+    <ion-item *ngFor="let pizza of pizzas">
+
+        <ion-card color="innercard">
+
+        <img src="{{pizza.imgUrl}}"/>
+    
+        <ion-card-content >
+          <ion-card-title>
+            {{pizza.nombre}}
+          </ion-card-title>
+          <p>
+            {{pizza.descripcion}}
+          </p>
+          <p>
+            {{pizza.costo}}
+          </p>
+        </ion-card-content>
+    
+        <ion-row no-padding >
+          <ion-col *ngIf="pizza.favorita == 1" >
+            <button id="{{pizza.id}}" ion-button clear small color="primary" icon-start (click)="favorito(pizza)">
+              <ion-icon name='heart'></ion-icon>
+              Favorita
+            </button>
+          </ion-col>
+          <ion-col *ngIf="pizza.favorita == 0" >
+            <button id="{{pizza.id}}" ion-button clear small color="primary" icon-start (click)="favorito(pizza)">
+              <ion-icon  name='heart-outline'></ion-icon>
+              <strong>Favorita</strong> 
+            </button>
+          </ion-col>
+          <ion-col text-center></ion-col> 
+          <ion-col text-left>
+            <button id="{{pizza.id}}" ion-button clear small color="primary" icon-start (click)="ordenar(pizza)">
+              <ion-icon name='cart'></ion-icon>
+              <strong>Ordenar</strong> 
+            </button>
+          </ion-col>
+        </ion-row>
+    
+      </ion-card>      
+    </ion-item>
+  
+  </ion-list>
+  
+  </ion-content>

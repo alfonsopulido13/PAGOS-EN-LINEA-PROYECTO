@@ -1,0 +1,22 @@
+page-home {
+
+    .grid{
+        text-align: center !important;
+        align-content: center !important;
+    }
+
+    .row{
+        text-align: center !important;
+        align-content: center !important;
+    }
+
+    .banner{
+        border-radius: 1em;
+        align-self: center;
+    }
+
+    .card-md + ion-card {
+        margin-top: 0 !important;
+    }
+
+}

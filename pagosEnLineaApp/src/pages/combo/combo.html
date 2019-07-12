@@ -1,0 +1,68 @@
+<!--
+  Generated template for the ComboPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Combos Promocionales</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content paddingc class="cards-bg">
+
+<ion-card *ngIf="combos.length == 0">
+  <ion-card-header>
+    No hay combos :(
+  </ion-card-header>
+
+  <ion-card-content>
+    Actualmente no contamos con combos promocionales en nuestro stock
+  </ion-card-content>
+</ion-card>
+
+<ion-list  *ngIf="combos.length > 0">
+
+
+  <ion-item *ngFor="let combo of combos">
+
+    <ion-card>
+
+      <img src="{{combo.IMAGEN_URL}}" />
+
+      <ion-card-content>
+        <ion-card-title>
+          {{combo.NOMBRE}}
+          <br>
+          <ion-icon name='logo-usd'>{{ combo.COSTO }}</ion-icon>
+        </ion-card-title>
+        <p>
+          {{combo.DESCRIPCION}}
+        </p>
+      </ion-card-content>
+
+      <ion-row no-padding>
+        <ion-col text-center>
+          <button id="{{combo.id}}" ion-button clear small color="danger" icon-start (click)="ordenar(combo)"> 
+            <ion-icon name='cart'></ion-icon>
+            Ordenar
+          </button>
+          <button id="detalle_{{combo.id}}" ion-button clear small color="danger" icon-start (click)="detalle(combo)">
+            <ion-icon name='disc'></ion-icon>
+            Detalle
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-item>
+
+</ion-list>
+
+</ion-content>
